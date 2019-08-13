@@ -1630,7 +1630,7 @@ header .social-links ul li a:focus {
  *
  * ------------------------------------------------------------------- */
 #cta {
-	background: #034e4a;
+	background: #0C2340;
 	padding-top: 9rem;
 	padding-bottom: 7.8rem;
 	text-align: center;
@@ -1639,7 +1639,7 @@ header .social-links ul li a:focus {
 	color: rgba(255, 255, 255, 0.5);
 }
 #cta .button {
-	background: #02312e;
+	background: #081730;
 	color: #FFFFFF;
 }
 #cta .button:hover {
@@ -1815,7 +1815,7 @@ footer .back-to-top {
 
 footer .back-to-top a {
 	display: block;
-	background: #034e4a;
+	background: #081730;
 	padding: 1.2rem 3rem 1.5rem;
 	color: #FFFFFF;
 }
