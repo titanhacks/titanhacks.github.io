@@ -283,7 +283,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #034e4a;
+	background: #081730;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -291,7 +291,7 @@ ul.disc li::before {
 }
 dt {
 	margin: 0;
-	color: #034e4a;
+	color: #081730;
 }
 dd {
 	margin: 0 0 0 2rem;
@@ -471,7 +471,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
 	color: #000000;
-	border-color: #034e4a;
+	border-color: #081730;
 }
 label, legend {
 	font-family: "roboto-bold", sans-serif;
@@ -573,7 +573,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: #034e4a;
+	background: #081730;
 	color: #FFFFFF;
 }
 
@@ -630,8 +630,8 @@ button.stroke.large,
 
 button.stroke:hover,
 .button.stroke:hover {
-	border: 3px solid #034e4a;
-	color: #034e4a;
+	border: 3px solid #081730;
+	color: #081730;
 }
 
 button::-moz-focus-inner,
@@ -778,7 +778,7 @@ input::-moz-focus-inner {
 	color: #252525;
 }
 .stats-tabs li a:hover {
-	color: #034e4a;
+	color: #081730;
 }
 .stats-tabs li a em {
 	display: block;
@@ -1430,7 +1430,7 @@ header .social-links ul li a:focus {
 .about-list .icon {
 	display: inline-block;
 	margin-bottom: 2.1rem;
-	color: #034e4a;
+	color: #081730;
 }
 .about-list .icon i {
 	font-size: 5.4rem;
@@ -1494,7 +1494,7 @@ header .social-links ul li a:focus {
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
-	background: #034e4a;
+	background: #081730;
 }
 
 #tab-contact .form-field label::after {
@@ -1504,7 +1504,7 @@ header .social-links ul li a:focus {
 	margin-top: -6px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	border-right: 5px solid #034e4a;
+	border-right: 5px solid #081730;
 	content: "";
 }
 
@@ -1525,7 +1525,7 @@ header .social-links ul li a:focus {
 }
 
 #tab-contact #message-success {
-	color: #034e4a;
+	color: #081730;
 }
 
 #tab-contact #message-warning i,
@@ -1546,7 +1546,7 @@ header .social-links ul li a:focus {
 #submit-loader .text-loader {
 	display: none;
 	font-family: "roboto-black", sans-serif;
-	color: #034e4a;
+	color: #081730;
 	letter-spacing: .3rem;
 	text-transform: uppercase;
 }
@@ -1573,7 +1573,7 @@ header .social-links ul li a:focus {
 .s-loader > div {
 	width: 1rem;
 	height: 1rem;
-	background-color: #034e4a;
+	background-color: #081730;
 	border-radius: 100%;
 	display: inline-block;
 	margin-right: .9rem;
@@ -1757,7 +1757,7 @@ footer .footer-bottom a:visited {
 
 footer .footer-bottom a:hover,
 footer .footer-bottom a:focus {
-	color: #034e4a;
+	color: #081730;
 }
 
 footer .footer-bottom .footer-logo {
