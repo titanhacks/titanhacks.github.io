@@ -1,6 +1,7 @@
 html, body {
   margin: 0; 
   padding: 0;
+  text-align: center;
 }
 
 header {
@@ -9,28 +10,26 @@ header {
   background-image: linear-gradient(#deb968, #67dbb8);
 }
 
-h1 {
-  font: 44px "Myriad";
-  text-align: center;
-
+.opener{
+  font-family: "Verdana";
+  margin: 5px; 
+  color: white;
+  vertical-align: middle;
 }
 
-header h1 {
+h1 {
+  font-size: 60px 
+}
+
+.opener h1 {
   margin: 0; 
-  padding-top: 50vh;
+  padding-top: 45vh;
   color: white;
   vertical-align: middle;
 }
 
 h3 {
-  font: 20px "Myriad";
-  text-align: center;
-}
-
-header h3 {
-  margin: 5px; 
-  color: white;
-  vertical-align: middle;
+  font-size: 20px;
 }
 
 svg {
