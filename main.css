@@ -10,15 +10,26 @@ header {
   background-image: linear-gradient(#deb968, #67dbb8);
 }
 
-.opener{
+button {
+  background-color: #b49a62; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
   font-family: "Verdana";
-  margin: 5px; 
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.opener{
   color: white;
   vertical-align: middle;
 }
 
 h1 {
-  font-size: 60px 
+  font-size: 60px;
+  font-family: "Verdana";
 }
 
 .opener h1 {
@@ -30,6 +41,7 @@ h1 {
 
 h3 {
   font-size: 20px;
+  font-family: "Verdana";
 }
 
 svg {
