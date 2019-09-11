@@ -9,19 +9,100 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             body{
-                background-image: linear-gradient(#ffffff, #ffffff);
+                background-color: #33507b;
+                text-align: center; 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
             }
             h1{
-                margin: 5vh;
+                font-size: 5em;
+                margin-top: 10vh;
+                color: #ffffff
+            }
+            h3{
+                margin: 3vh;
+                font-size: 2em;
+            }
+            p{
+                color: #000000;
+            }
+            .info{
+                text-align: left;
+                margin: 3vh;
+                font-size: 1.25em;
+            }
+            .col-sm{
+                background-color: #bbbbbb;
+                margin: 3vh;
+                border-radius: 8px;
+            }
+            .submit {
+                align-self: left;
+                margin-top: 1vh;
+                background-color: #33507b; /* Green */
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1em;
+                border-radius: 8px;
+            }
+            .imputer{
+                margin: 0.5vh;
             }
         </style>
         <title>Titan Hack Club</title>
     </head>
     <body>
-        <a href="https://hackclub.com/"><img style="position: absolute; top: 10px; left: 0; border: 0; width: 150px; z-index: 999" src="https://cdn.jsdelivr.net/gh/hackclub/meta@fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_orpheus_hand_rotated.svg" alt="Hack Club"/></a>
-        <h1 style="text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Titan Hack Club</h1>
-        <p>I'm stuff.</p>
+        <a href="https://hackclub.com/" target="_blank"><img style="position: absolute; top: 10px; left: 0; border: 0; width: 150px; z-index: 999" src="https://cdn.jsdelivr.net/gh/hackclub/meta@fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_orpheus_hand_rotated.svg" alt="Hack Club"/></a>
+        <h1>Titan Hack Club</h1>
+        <h3 style="color: #ffffff; margin-left: 25vw; margin-right: 25vw">A club for creating at San Marino High School. 
+            We meet Fridays at lunch and Sundays in the afternoon.</h3>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h3>Workshops</h3>
+                <div class="info">
+                    <p>Below is a collection of coding tutorials from Hack Club. 
+                        Go at your own or do what it is assigned, & submit your link when you’re finished!</p>
+                    <ol>
+                        <li><a href="https://hackclub.com/workshops/personal_website" target="_blank">Build Your Own Website</a></li>
+                        <li><a href="https://hackclub.com/workshops/that_was_easy" target="_blank">Creating Buttons</a></li>
+                        <li><a href="https://hackclub.com/workshops/geometric_pattern" target="_blank">Draw Geometric Patterns</a></li>
+                    </ol> 
+                </div>
+              </div>
+              <div class="col-sm">
+                <h3>Resources</h3>
+                <div class="info">
+                    <p>Use this form to submit assignments!</p>
+                    <form class="text-left" method="POST" action="https://formspree.io/titanhackclub@gmail.com">
+                        <input style="margin:1vh" type="email" name="email" placeholder="Email">
+                        <input style="margin:1vh" type="assignment" name="assignnment" placeholder="Assignment Name">
+                        <textarea style="margin:1vh" name="link" placeholder=" Assignment Link"></textarea>
+                        <button style="margin:1vh" class="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <h3>Resources</h3>
+                    <div class="info">
+                        <p>Below are a few resources you may find useful. 
+                            We'll be using these during our workshops, but you can also use these independently for personal projects.</p>
+                        <ol>
+                            <li><a href="https://repl.it" target="_blank">repl.it</a></li>
+                            <li><a href="https://glitch.com" target="_blank">Glitch</a></li>
+                            <li><a href="https://github.com" target="_blank">Github</a></li>
+                        </ol> 
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <p style="color: white">TitanHacks © 2019</p>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
