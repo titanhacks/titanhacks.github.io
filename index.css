@@ -1,71 +1,21 @@
-html, body {
-  margin: 0; 
-  padding: 0;
-  text-align: center;
+body{
+  background-color: #33507b;
+  text-align: center; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
-header {
-  position: relative;
-  height: 50vh;
-  background-image: linear-gradient(#000000, #888888);
+a{
+  font-size: 5em;
+  font-family: "BebasNeueRegular";
+  color: #ffffff
 }
-
-footer {
-  position: relative;
-  height: 50vh;
-  background-image: linear-gradient(#888888, #ffffff);
+a:hover {
+  color: #dddddd;
 }
-
-a {
-  font-size: 60px;
-  font-family: "Verdana";
-  font-weight: bold;   
+.container{
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
-div{
-  position:absolute; 
-  height:10em; 
-
-  left:0; right:0;
-  top:0; bottom:0;
-  margin:auto;
-
-  /*this to solve "the content will not be cut when the window is smaller than the content": */
-  max-width:100%;
-  max-height:100%;
-  overflow:auto;
+.row{
+  flex: none;
+  margin-top: 20%;
 }
-
-.opener a {
-  color: #cccccc;
-}
-
-.closer a:link{
-  color: #333333;
-}
-
-.closer a:hover{
-  color: #000000;
-}
-
-.closer a:active{
-  color: #000000;
-}
-
-.closer a:visited{
-  color: #333333;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-svg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  /* set height to pixels if you want angle to change with screen width */
-}
-
-
