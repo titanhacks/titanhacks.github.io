@@ -78,6 +78,6 @@ ol li::before {
 .text-left{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: flex-start;
 }
