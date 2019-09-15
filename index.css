@@ -1,21 +1,315 @@
-body{
-  background-color: #33507b;
-  text-align: center; 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+body, html {
+  /* cursor: url('../img/pointer.svg'), auto; */
 }
-a{
-  font-size: 5em;
-  font-family: "BebasNeueRegular";
-  color: #ffffff
+
+html {
+  height: 100%;
+  color: gray;
 }
-a:hover {
-  color: #dddddd;
+
+body {
+  height:100%;
+  background: black;
 }
-.container{
-  flex-direction: column;
-  justify-content: space-evenly;
+
+.header {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 300%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  z-index: 100;
 }
-.row{
-  flex: none;
-  margin-top: 20%;
+
+.side {
+  color: white;
+  height:45%;
+  width:100%;
+  padding: 10% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#club-back-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  color: white;
+  height: 45%;
+  width: 100%;
+  background: #33507b;
+  z-index: 1;
+}
+
+#hack-back-side {
+  position: absolute;
+  top:45%;
+  left:0;
+  color: white;
+  height: 45%;
+  width: 100%;
+  background: #33507b;
+  z-index: 1;
+}
+
+#club-side {
+  float:left;
+  background-color: #18273d;
+}
+
+#hack-side {
+  float:right;
+  background-color: #18273d;
+}
+
+.txt {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  font-size: 150%;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  z-index: 100;
+  letter-spacing: -0.6px;
+}
+
+.info {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  font-size: 125%;
+  margin-top: 2rem;
+  font-weight: 300;
+}
+
+.nav {
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  display:inline;
+  font-size: 130%;
+  font-weight: 300;
+  color: white;
+  margin-right: 20px;
+}
+
+#nav-bar{
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: black;
+  border-top: solid 1px white;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.divider {
+  border: solid 1px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+.social-media {
+  right: 20px;
+  position: absolute;
+}
+
+.media {
+  height: 30px;
+}
+
+.facebook {
+  margin-right: 7px;
+}
+
+.no-underline:link, .no-underline:visited, .no-underline:hover, .no-underline:active {
+  text-decoration: none;
+}
+  
+
+#club, #hack {
+  display: none;
+}
+
+.always-visible {
+  position: relative;
+  z-index: 10;
+}
+
+.toggle-info {
+  position: relative;
+  z-index: 0;
+}
+
+.logo {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  ;
+  font-size: 1px;
+}
+
+.disappear {
+  display: none;
+}
+
+.disappear-l{
+  display: none;
+}
+
+/* greater things */ 
+
+.header {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.txt {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.divider {
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-top: 0px;
+  font-size: 16px; 
+}
+
+.click-club {
+  border: solid 2px white;
+  margin-top: 15px;
+  padding: 6px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 30px;
+  background: white;
+  color: #18273d;
+  cursor: pointer;
+}
+
+.click-club:hover {
+  background: none;
+  color: white;
+  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+}
+
+.mini-logoz {
+  height: 30px;
+  margin-top: -2px;
+  margin-right: 3px;
+} 
+
+/* header, hack-txt, divider, hack, info, click-club */
+
+
+@media all and (min-width: 700px) {
+
+  .click-club {
+    padding: 9px 27px;
+    font-size: 16px;
+  }
+
+  .mini-logoz {
+    display: none;
+  }
+
+  .header {
+    font-size: 400%;
+  }
+
+  .side {
+    height: 100%;
+    width:50%;
+  }
+  
+  #club-back-side {
+    height:100%;
+    width:50%;
+  }
+
+  #hack-back-side {
+    top:0;
+    left:50%;
+    height:100%;
+    width:50%;
+  }
+
+  #club-side {
+    /* cursor: url('../img/hover.svg'), auto; */
+    float:left;
+  }
+
+  #hack-side {
+    float:right;
+  }
+
+  .txt {
+    font-size:200%;
+  }
+  
+  .info {
+    font-size:150%;
+  }
+
+  .divider {
+    margin: 0 auto 2rem;
+  }
+  
+  .nav {
+    font-size:130%;
+  }
+
+  .nav:link, .nav:visited, .nav:hover, .nav:active {
+    color: white;
+  }
+
+  #nav-bar {
+    height:60px;
+    background: rgba(0, 0, 0, 0.10);
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 90%;
+    margin-right: 30px;
+  }
+
+  .disappear {
+    display:block;
+  }
+
+}
+
+@media (min-width: 925px) {
+  .disappear-l {
+    display: block;
+  }
+}
+
+.click-hack {
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 2px black;
+  border-top: solid 2px black;
+  padding: 6px 24px;
+  font-weight: 300;
+  background: black;
+  color: #18273d;
+  cursor: default;
+  opacity: 0.4;
+}
+
+.click-hack:hover {
+  background: black;
+  color: #18273d;
+}
+
+.sponsor {
+  display: inline-block;
 }
