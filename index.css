@@ -286,7 +286,7 @@ body {
 
 }
 
-@media (min-width: 925px) {
+@media (min-width: 125px) {
   .disappear-l {
     display: block;
   }
