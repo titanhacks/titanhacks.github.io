@@ -299,15 +299,15 @@ body {
   border-top: solid 2px black;
   padding: 6px 24px;
   font-weight: 300;
-  background: black;
+  background: white;
   color: #18273d;
   cursor: default;
-  opacity: 0.4;
 }
 
 .click-hack:hover {
   background: black;
-  color: #18273d;
+  color: white;
+  opacity: 0.4;
 }
 
 .sponsor {
