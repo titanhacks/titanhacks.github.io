@@ -180,6 +180,7 @@ body {
 }
 
 .click-club {
+  font: italic;
   border: solid 2px white;
   margin-top: 15px;
   padding: 6px 20px;
