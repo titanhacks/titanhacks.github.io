@@ -99,7 +99,7 @@ body {
   bottom: 0;
   left: 0;
   display: flex;
-  background-color: black;
+  background-color: white;
   border-top: solid 1px white;
   align-items: center;
   padding: 0 20px;
@@ -272,7 +272,8 @@ body {
 
   #nav-bar {
     height:60px;
-    background: rgba(0, 0, 0, 0.10);
+    background-color: white;
+    color: black;
     padding: 0 20px;
   }
 
