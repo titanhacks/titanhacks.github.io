@@ -1,73 +1,66 @@
 <html class="gr__titanhacks_me"><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>titanHacks</title>
-  <meta name="description" content="titanHackClub">
-  <link href="./index.css" rel="stylesheet">
-  <link href="./bootstrap.min.css" rel="stylesheet">
-  <link href="./indexFont.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-</head>
-<body data-gr-c-s-loaded="true">
-  <!-- MLH BADGE
-       <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a> -->
-
-  <div id="club-side" class="side">
-    <div class="info-wrapper">
-      <div class="always-visible">
-        <p class="header">CLUB</p>
-        <style>style= "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;"</style>
-        <p id="hack-txt" class="txt">san marino HS's premier CompSci club<br> driven to learn</p>
-      </div>
-      <div id="club-back-side">
-      </div>
-      <div class="toggle-info" id="club" style="display: none;">
-        <div class="divider"> </div>
-        <p class="info">
-          learn more about titanHackClub<br> and our website
-          <br><a href="club" class="click-club click-hack">Visit</a>
-        </p>
-      </div> 
-    </div>     
-  </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titanHacks</title>
+    <meta name="description" content="titanHackClub">
+    <link href="./index.css" rel="stylesheet">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./indexFont.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <!-- MLH BADGE
+         <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a> -->
   
-  <div id="hack-side" class="side">
-    <div class="info-wrapper">
-      <div class="always-visible">
-        <p class="header">HACKATHON </p>
-        <style>style= "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;"</style>
-        <p id="hack-txt" class="txt">a two day highschool hackathon<br> join today!</p>
-      </div>
-      <div id="hack-back-side" style="">
-      </div>
-      <div class="toggle-info" id="hack" style="display: none;">
-        <div class="divider"> </div>
-        <p class="info">
-          Memorial Weekend 2020<br>TBD
-          <br><a href="#" class="click-club click-hack">Coming Soon!</a>
-        </p>
-      </div>
-    </div>  
-  </div>
-  <div id="nav-bar">
-    <!--<a class="nav" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">mlh terms</a>-->
-    <div class="social-media">
-      <a class="nav sponsor" href="mailto:sponsorship@jeff.zw07@gmail.com">sponsor</a>
-      <a class="no-underline" href="https://facebook.com/" target="_blank">
-        <img class="media facebook" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjIuNjc1IDBoLTIxLjM1Yy0uNzMyIDAtMS4zMjUuNTkzLTEuMzI1IDEuMzI1djIxLjM1MWMwIC43MzEuNTkzIDEuMzI0IDEuMzI1IDEuMzI0aDExLjQ5NXYtOS4yOTRoLTMuMTI4di0zLjYyMmgzLjEyOHYtMi42NzFjMC0zLjEgMS44OTMtNC43ODggNC42NTktNC43ODggMS4zMjUgMCAyLjQ2My4wOTkgMi43OTUuMTQzdjMuMjRsLTEuOTE4LjAwMWMtMS41MDQgMC0xLjc5NS43MTUtMS43OTUgMS43NjN2Mi4zMTNoMy41ODdsLS40NjcgMy42MjJoLTMuMTJ2OS4yOTNoNi4xMTZjLjczIDAgMS4zMjMtLjU5MyAxLjMyMy0xLjMyNXYtMjEuMzVjMC0uNzMyLS41OTMtMS4zMjUtMS4zMjUtMS4zMjV6Ii8+PC9zdmc+">
-      </a>
-      <a class="no-underline" href="mailto:jeff.zw07@gmail.com">
-        <img class="media email" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MC4yIDQ5MC4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuMiA0OTAuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggZD0iTTQyMC45NSw2MS44QzM3Ni4yNSwyMC42LDMyMC42NSwwLDI1NC4yNSwwYy02OS44LDAtMTI5LjMsMjMuNC0xNzguNCw3MC4zcy03My43LDEwNS4yLTczLjcsMTc1ICAgYzAsNjYuOSwyMy40LDEyNC40LDcwLjEsMTcyLjZjNDYuOSw0OC4yLDEwOS45LDcyLjMsMTg5LjIsNzIuM2M0Ny44LDAsOTQuNy05LjgsMTQwLjctMjkuNWMxNS02LjQsMjIuMy0yMy42LDE2LjItMzguN2wwLDAgICBjLTYuMy0xNS42LTI0LjEtMjIuOC0zOS42LTE2LjJjLTQwLDE3LjItNzkuMiwyNS44LTExNy40LDI1LjhjLTYwLjgsMC0xMDcuOS0xOC41LTE0MS4zLTU1LjZjLTMzLjMtMzctNTAtODAuNS01MC0xMzAuNCAgIGMwLTU0LjIsMTcuOS05OS40LDUzLjYtMTM1LjdjMzUuNi0zNi4yLDc5LjUtNTQuNCwxMzEuNS01NC40YzQ3LjksMCw4OC40LDE0LjksMTIxLjQsNDQuN3M0OS41LDY3LjMsNDkuNSwxMTIuNSAgIGMwLDMwLjktNy42LDU2LjctMjIuNyw3Ny4yYy0xNS4xLDIwLjYtMzAuOCwzMC44LTQ3LjEsMzAuOGMtOC44LDAtMTMuMi00LjctMTMuMi0xNC4yYzAtNy43LDAuNi0xNi43LDEuNy0yNy4xbDE4LjYtMTUyLjFoLTY0ICAgbC00LjEsMTQuOWMtMTYuMy0xMy4zLTM0LjItMjAtNTMuNi0yMGMtMzAuOCwwLTU3LjIsMTIuMy03OS4xLDM2LjhjLTIyLDI0LjUtMzIuOSw1Ni4xLTMyLjksOTQuN2MwLDM3LjcsOS43LDY4LjIsMjkuMiw5MS4zICAgYzE5LjUsMjMuMiw0Mi45LDM0LjcsNzAuMywzNC43YzI0LjUsMCw0NS40LTEwLjMsNjIuOC0zMC44YzEzLjEsMTkuNywzMi40LDI5LjUsNTcuOSwyOS41YzM3LjUsMCw2OS45LTE2LjMsOTcuMi00OSAgIGMyNy4zLTMyLjYsNDEtNzIsNDEtMTE4LjFDNDg4LjA1LDE1Mi45LDQ2NS43NSwxMDMsNDIwLjk1LDYxLjh6IE0yNzMuNTUsMjkxLjljLTExLjMsMTUuMi0yNC44LDIyLjktNDAuNSwyMi45ICAgYy0xMC43LDAtMTkuMy01LjYtMjUuOC0xNi44Yy02LjYtMTEuMi05LjktMjUuMS05LjktNDEuOGMwLTIwLjYsNC42LTM3LjIsMTMuOC00OS44czIwLjYtMTksMzQuMi0xOWMxMS44LDAsMjIuMyw0LjcsMzEuNSwxNC4yICAgczEzLjgsMjIuMSwxMy44LDM3LjlDMjkwLjU1LDI1OS4yLDI4NC44NSwyNzYuNiwyNzMuNTUsMjkxLjl6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
-      <a class="no-underline" href="https://www.instagram.com/sm_titan_hacks/">
-        <img class="media instagram" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTEuOTg0IDE2LjgxNWMyLjU5NiAwIDQuNzA2LTIuMTExIDQuNzA2LTQuNzA3IDAtMS40MDktLjYyMy0yLjY3NC0xLjYwNi0zLjUzOC0uMzQ2LS4zMDMtLjczNS0uNTU2LTEuMTU4LS43NDgtLjU5My0uMjctMS4yNDktLjQyMS0xLjk0MS0uNDIxcy0xLjM0OS4xNTEtMS45NDEuNDIxYy0uNDI0LjE5NC0uODE0LjQ0Ny0xLjE1OC43NDktLjk4NS44NjQtMS42MDggMi4xMjktMS42MDggMy41MzggMCAyLjU5NSAyLjExMiA0LjcwNiA0LjcwNiA0LjcwNnptLjAxNi04LjE4NGMxLjkyMSAwIDMuNDc5IDEuNTU3IDMuNDc5IDMuNDc4IDAgMS45MjEtMS41NTggMy40NzktMy40NzkgMy40NzlzLTMuNDc5LTEuNTU3LTMuNDc5LTMuNDc5YzAtMS45MjEgMS41NTgtMy40NzggMy40NzktMy40Nzh6bTUuMjIzLjM2OWg2Ljc3N3YxMC4yNzhjMCAyLjYwOC0yLjExNCA0LjcyMi00LjcyMiA0LjcyMmgtMTQuNDkzYy0yLjYwOCAwLTQuNzg1LTIuMTE0LTQuNzg1LTQuNzIydi0xMC4yNzhoNi43NDdjLS41NDQuOTEzLS44NzIgMS45NjktLjg3MiAzLjEwOSAwIDMuMzc0IDIuNzM1IDYuMTA5IDYuMTA5IDYuMTA5czYuMTA5LTIuNzM1IDYuMTA5LTYuMTA5Yy4wMDEtMS4xNC0uMzI3LTIuMTk2LS44Ny0zLjEwOXptMi4wNTUtOWgtMTIuMjc4djVoLTF2LTVoLTF2NWgtMXYtNC45MjNjLS4zNDYuMDU3LS42ODIuMTQzLTEgLjI3djQuNjUzaC0xdi00LjEwMmMtMS4yMDIuODU3LTIgMi4yNDYtMiAzLjgyNHYzLjI3OGg3LjQ3M2MxLjE2Ny0xLjI4MiAyLjc5OC0yIDQuNTExLTIgMS43MjIgMCAzLjM1MS43MjUgNC41MTEgMmg3LjUwNXYtMy4yNzhjMC0yLjYwOC0yLjExNC00LjcyMi00LjcyMi00LjcyMnptMi43MjIgNS4yNjVjMCAuNDA2LS4zMzMuNzM1LS43NDUuNzM1aC0yLjUxMWMtLjQxMSAwLS43NDQtLjMyOS0uNzQ0LS43MzV2LTIuNTNjMC0uNDA2LjMzMy0uNzM1Ljc0NC0uNzM1aDIuNTExYy40MTIgMCAuNzQ1LjMyOS43NDUuNzM1djIuNTN6Ii8+PC9zdmc+">
-      </a>
-      <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/"             
-        title="Flaticon">www.flaticon.com</a></div> -->
-        
-   
+    <div id="club-side" class="side">
+      <div class="info-wrapper">
+        <div class="always-visible">
+          <p class="header">CLUB</p>
+          <p id="hack-txt" class="txt">san marino HS's premier CompSci club<br> driven to learn</p>
+        </div>
+        <div id="club-back-side">
+        </div>
+        <div class="toggle-info" id="club" style="display: none;">
+          <div class="divider"> </div>
+          <p class="info">
+            learn more about titanHackClub<br> and our website
+            <br><a href="club" class="click-club click-hack">Visit</a>
+          </p>
+        </div> 
+      </div>     
     </div>
-  </div>
-  <script src="moving.js"></script>    
-
-</body></html>
+    
+    <div id="hack-side" class="side">
+      <div class="info-wrapper">
+        <div class="always-visible">
+          <p class="header">HACKATHON </p>
+          <p id="hack-txt" class="txt">a two day highschool hackathon<br> join today!</p>
+        </div>
+        <div id="hack-back-side" style="">
+        </div>
+        <div class="toggle-info" id="hack" style="display: none;">
+          <div class="divider"> </div>
+          <p class="info">
+            Memorial Weekend 2020<br>TBD
+            <br><a href="#" class="click-club click-hack">Coming Soon!</a>
+          </p>
+        </div>
+      </div>  
+    </div>
+    <div id="nav-bar">
+      <!--<a class="nav" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">mlh terms</a>-->
+      <div class="social-media">
+        <a class="nav sponsor" href="mailto:sponsorship@jeff.zw07@gmail.com" style="color: white">sponsor</a>
+        <a class="no-underline" href="https://facebook.com/" target="_blank">
+          <img class="media facebook" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjIuNjc1IDBoLTIxLjM1Yy0uNzMyIDAtMS4zMjUuNTkzLTEuMzI1IDEuMzI1djIxLjM1MWMwIC43MzEuNTkzIDEuMzI0IDEuMzI1IDEuMzI0aDExLjQ5NXYtOS4yOTRoLTMuMTI4di0zLjYyMmgzLjEyOHYtMi42NzFjMC0zLjEgMS44OTMtNC43ODggNC42NTktNC43ODggMS4zMjUgMCAyLjQ2My4wOTkgMi43OTUuMTQzdjMuMjRsLTEuOTE4LjAwMWMtMS41MDQgMC0xLjc5NS43MTUtMS43OTUgMS43NjN2Mi4zMTNoMy41ODdsLS40NjcgMy42MjJoLTMuMTJ2OS4yOTNoNi4xMTZjLjczIDAgMS4zMjMtLjU5MyAxLjMyMy0xLjMyNXYtMjEuMzVjMC0uNzMyLS41OTMtMS4zMjUtMS4zMjUtMS4zMjV6Ii8+PC9zdmc+">
+        </a>
+        <a class="no-underline" href="mailto:jeff.zw07@gmail.com">
+          <img class="media email" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MC4yIDQ5MC4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuMiA0OTAuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggZD0iTTQyMC45NSw2MS44QzM3Ni4yNSwyMC42LDMyMC42NSwwLDI1NC4yNSwwYy02OS44LDAtMTI5LjMsMjMuNC0xNzguNCw3MC4zcy03My43LDEwNS4yLTczLjcsMTc1ICAgYzAsNjYuOSwyMy40LDEyNC40LDcwLjEsMTcyLjZjNDYuOSw0OC4yLDEwOS45LDcyLjMsMTg5LjIsNzIuM2M0Ny44LDAsOTQuNy05LjgsMTQwLjctMjkuNWMxNS02LjQsMjIuMy0yMy42LDE2LjItMzguN2wwLDAgICBjLTYuMy0xNS42LTI0LjEtMjIuOC0zOS42LTE2LjJjLTQwLDE3LjItNzkuMiwyNS44LTExNy40LDI1LjhjLTYwLjgsMC0xMDcuOS0xOC41LTE0MS4zLTU1LjZjLTMzLjMtMzctNTAtODAuNS01MC0xMzAuNCAgIGMwLTU0LjIsMTcuOS05OS40LDUzLjYtMTM1LjdjMzUuNi0zNi4yLDc5LjUtNTQuNCwxMzEuNS01NC40YzQ3LjksMCw4OC40LDE0LjksMTIxLjQsNDQuN3M0OS41LDY3LjMsNDkuNSwxMTIuNSAgIGMwLDMwLjktNy42LDU2LjctMjIuNyw3Ny4yYy0xNS4xLDIwLjYtMzAuOCwzMC44LTQ3LjEsMzAuOGMtOC44LDAtMTMuMi00LjctMTMuMi0xNC4yYzAtNy43LDAuNi0xNi43LDEuNy0yNy4xbDE4LjYtMTUyLjFoLTY0ICAgbC00LjEsMTQuOWMtMTYuMy0xMy4zLTM0LjItMjAtNTMuNi0yMGMtMzAuOCwwLTU3LjIsMTIuMy03OS4xLDM2LjhjLTIyLDI0LjUtMzIuOSw1Ni4xLTMyLjksOTQuN2MwLDM3LjcsOS43LDY4LjIsMjkuMiw5MS4zICAgYzE5LjUsMjMuMiw0Mi45LDM0LjcsNzAuMywzNC43YzI0LjUsMCw0NS40LTEwLjMsNjIuOC0zMC44YzEzLjEsMTkuNywzMi40LDI5LjUsNTcuOSwyOS41YzM3LjUsMCw2OS45LTE2LjMsOTcuMi00OSAgIGMyNy4zLTMyLjYsNDEtNzIsNDEtMTE4LjFDNDg4LjA1LDE1Mi45LDQ2NS43NSwxMDMsNDIwLjk1LDYxLjh6IE0yNzMuNTUsMjkxLjljLTExLjMsMTUuMi0yNC44LDIyLjktNDAuNSwyMi45ICAgYy0xMC43LDAtMTkuMy01LjYtMjUuOC0xNi44Yy02LjYtMTEuMi05LjktMjUuMS05LjktNDEuOGMwLTIwLjYsNC42LTM3LjIsMTMuOC00OS44czIwLjYtMTksMzQuMi0xOWMxMS44LDAsMjIuMyw0LjcsMzEuNSwxNC4yICAgczEzLjgsMjIuMSwxMy44LDM3LjlDMjkwLjU1LDI1OS4yLDI4NC44NSwyNzYuNiwyNzMuNTUsMjkxLjl6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+        <a class="no-underline" href="https://www.instagram.com/sm_titan_hacks/">
+          <img class="media instagram" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTEuOTg0IDE2LjgxNWMyLjU5NiAwIDQuNzA2LTIuMTExIDQuNzA2LTQuNzA3IDAtMS40MDktLjYyMy0yLjY3NC0xLjYwNi0zLjUzOC0uMzQ2LS4zMDMtLjczNS0uNTU2LTEuMTU4LS43NDgtLjU5My0uMjctMS4yNDktLjQyMS0xLjk0MS0uNDIxcy0xLjM0OS4xNTEtMS45NDEuNDIxYy0uNDI0LjE5NC0uODE0LjQ0Ny0xLjE1OC43NDktLjk4NS44NjQtMS42MDggMi4xMjktMS42MDggMy41MzggMCAyLjU5NSAyLjExMiA0LjcwNiA0LjcwNiA0LjcwNnptLjAxNi04LjE4NGMxLjkyMSAwIDMuNDc5IDEuNTU3IDMuNDc5IDMuNDc4IDAgMS45MjEtMS41NTggMy40NzktMy40NzkgMy40NzlzLTMuNDc5LTEuNTU3LTMuNDc5LTMuNDc5YzAtMS45MjEgMS41NTgtMy40NzggMy40NzktMy40Nzh6bTUuMjIzLjM2OWg2Ljc3N3YxMC4yNzhjMCAyLjYwOC0yLjExNCA0LjcyMi00LjcyMiA0LjcyMmgtMTQuNDkzYy0yLjYwOCAwLTQuNzg1LTIuMTE0LTQuNzg1LTQuNzIydi0xMC4yNzhoNi43NDdjLS41NDQuOTEzLS44NzIgMS45NjktLjg3MiAzLjEwOSAwIDMuMzc0IDIuNzM1IDYuMTA5IDYuMTA5IDYuMTA5czYuMTA5LTIuNzM1IDYuMTA5LTYuMTA5Yy4wMDEtMS4xNC0uMzI3LTIuMTk2LS44Ny0zLjEwOXptMi4wNTUtOWgtMTIuMjc4djVoLTF2LTVoLTF2NWgtMXYtNC45MjNjLS4zNDYuMDU3LS42ODIuMTQzLTEgLjI3djQuNjUzaC0xdi00LjEwMmMtMS4yMDIuODU3LTIgMi4yNDYtMiAzLjgyNHYzLjI3OGg3LjQ3M2MxLjE2Ny0xLjI4MiAyLjc5OC0yIDQuNTExLTIgMS43MjIgMCAzLjM1MS43MjUgNC41MTEgMmg3LjUwNXYtMy4yNzhjMC0yLjYwOC0yLjExNC00LjcyMi00LjcyMi00LjcyMnptMi43MjIgNS4yNjVjMCAuNDA2LS4zMzMuNzM1LS43NDUuNzM1aC0yLjUxMWMtLjQxMSAwLS43NDQtLjMyOS0uNzQ0LS43MzV2LTIuNTNjMC0uNDA2LjMzMy0uNzM1Ljc0NC0uNzM1aDIuNTExYy40MTIgMCAuNzQ1LjMyOS43NDUuNzM1djIuNTN6Ii8+PC9zdmc+">
+        </a>
+      </div>
+    </div>
+    <script src="moving.js"></script>    
+  </body></html>
